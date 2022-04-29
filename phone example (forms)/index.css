@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .phone {
+  height: 700px;
+  width: 400px;
+  background-color: #4d4d4d;
+  border-radius: 25px;
+  position: relative;
+}
+
+.container .phone .cameras {
+  min-width: 150px;
+  min-height: 150px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  padding: 20px;
+  row-gap: 10px;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+  border-top-left-radius: 25px;
+}
+
+.container .phone .cameras .camera {
+  width: 60px;
+  height: 60px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.container .phone .flash {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #929205;
+  left: 180px;
+  top: 50px;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+}
+
+.container .phone .flash-open {
+  -webkit-box-shadow: yellow 0px 8px 24px, yellow 0px 16px 56px, yellow 0px 24px 80px;
+          box-shadow: yellow 0px 8px 24px, yellow 0px 16px 56px, yellow 0px 24px 80px;
+  background-color: yellow;
+}
+
+.container .phone .logo {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.container .phone .logo .logo-image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.container .phone .model-name {
+  position: absolute;
+  left: 50%;
+  top: 55%;
+  width: 70%;
+  text-align: center;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 35px;
+  font-weight: bold;
+  color: white;
+}
+/*# sourceMappingURL=index.css.map */

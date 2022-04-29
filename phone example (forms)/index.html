@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Creator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <section class="phone-container">
+            <div class="phone">
+                <div class="cameras">
+                    <div class="camera"></div>
+                    <div class="camera"></div>
+                    <div class="camera"></div>
+                    <div class="camera"></div>
+                </div>
+                <div class="flash"></div>
+                <div class="logo">
+                    <img src="" class="logo-image" alt="">
+                </div>
+                <div class="model-name">Samsung Galaxy s22</div>
+            </div>
+        </section>
+        <form action="" class="form">
+            <div class="model-div">
+                <label for="model-name">Model Name</label>
+                <input id="model-name" type="text">
+            </div>
+            <div class="logo-div">
+                <label for="logo">Logo</label>
+                <textarea name="logo" id="logo-text" cols="30" rows="2"></textarea>
+            </div>
+            <div class="flash-div">
+                <label for="flash-box">Flash</label>
+                <input id="flash-box" type="checkbox">
+            </div>
+            <div class="camera-count-div">
+                <label for="c1">1</label>
+                <input id="c1" data="1" name="camera-count" class="camera-count" type="radio">
+                <label for="c2">2</label>
+                <input id="c2" data="2" name="camera-count" class="camera-count" type="radio">
+                <label for="c3">3</label>
+                <input id="c3" data="3" name="camera-count" class="camera-count" type="radio">
+                <label for="c4">4</label>
+                <input id="c4" data="4" name="camera-count" class="camera-count" type="radio">
+            </div>
+            <div class="color-select-div">
+                <select name="color" id="color-select">
+                    <option value=""></option>
+                    <option value="blue">Blue Color</option>
+                    <option value="red">Red Color</option>
+                    <option value="green">Green Color</option>
+                </select>
+            </div>
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
